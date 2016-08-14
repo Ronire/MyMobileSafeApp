@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.lv.mymobilesafeapp.activity.ClearCacheActivity">
+
+    <RelativeLayout
+        android:id="@+id/cache_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/cache_je"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/n3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cache_je"
+            android:text="垃圾清理"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/cachecenter"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/cache_top"
+        android:background="@color/colorPrimaryDark">
+        <com.lv.mymobilesafeapp.view.CircleProgressBar
+            android:id="@+id/circlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#0000425f">
+
+            <TextView
+                android:id="@+id/cachetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/hidecenter"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/cache_top"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+       android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:text="1111"
+                android:visibility="invisible"
+                android:id="@+id/cache_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:text="22222"
+                android:visibility="invisible"
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/cachelist"
+        android:layout_below="@id/cachecenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/clear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/but_shap"
+        android:onClick="clear"
+        android:text="清理缓存"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

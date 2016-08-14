@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lv.mymobilesafeapp.activity.PreventionActivity">
+   <!--<EditText
+        android:id="@+id/Et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/safenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置安全号码"/>
+    <Button
+        android:id="@+id/sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定SIM卡"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment"/>
+
+
+
+
+</LinearLayout>

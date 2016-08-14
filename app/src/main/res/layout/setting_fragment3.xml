@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/title3"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="设置安全号码"/>
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIM卡变更后,报警短信会发送给安全号码"
+        />
+    <EditText
+        android:id="@+id/e_safe"
+       android:layout_marginTop="10dp"
+        android:hint="请输入安全号码"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_shap"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一步"
+            android:onClick="preview3"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/but_shap"/>
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:onClick="next3"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/but_shap"/>
+    </LinearLayout>
+
+
+</LinearLayout>

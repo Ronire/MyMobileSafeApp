@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#EAEAEA"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="#8B8E8E" />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_top">
+
+        <Button
+            android:id="@+id/Circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="11111"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shapbutton"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/Circle"
+            android:layout_marginLeft="15dp"
+            android:text="22222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/radio"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+android:background="@color/colorPrimaryDark"
+    tools:context="com.lv.mymobilesafeapp.activity.TestActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="but"
+        android:text="测试"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="but3"
+        android:text="测试3"/>
+    <!--<ListView
+        android:id="@+id/uplist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+   <com.lv.mymobilesafeapp.view.CircleProgressBar
+       android:id="@+id/bar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+
+</LinearLayout>

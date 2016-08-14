@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.lv.mymobilesafeapp.activity.MainSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainflow_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/mainflow_je"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/n3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/mainflow_je"
+            android:text="主套餐流量"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rl_maintotal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#313131"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mainflow_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="月总流量"/>
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/mainflow_total"
+        android:id="@+id/mainflow_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.59G"/>
+
+
+</RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EAEAEA"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#313131"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mainflow_jiesuanri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="月结算日"/>
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/mainflow_jiesuanri"
+            android:id="@+id/mainflow_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每月1日"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/a4k"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EAEAEA"/>
+
+
+</LinearLayout>

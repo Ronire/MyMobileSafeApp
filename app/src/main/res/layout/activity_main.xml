@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lv.mymobilesafeapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/tv_guanjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="手机管家"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <com.lv.mymobilesafeapp.view.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/tv_guanjia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shapbuttext">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="20"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_alignBaseline="@id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/count"
+                    android:text="分"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </com.lv.mymobilesafeapp.view.CircleImageView>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_below="@id/rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

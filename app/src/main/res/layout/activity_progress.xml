@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.lv.mymobilesafeapp.activity.ProgressActivity">
+    <LinearLayout
+        android:id="@+id/progress_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_count"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_available"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_total"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/progress_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plistview"/>
+    <LinearLayout
+        android:visibility="invisible"
+         android:id="@+id/buttongroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selectall"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:text="全选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/opposite"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:text="反选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/delete"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:text="删除"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

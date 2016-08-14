@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lv.mymobilesafeapp.activity.AppManagerActivity">
+    <RelativeLayout
+        android:id="@+id/app_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/Im_n3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/n3"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:textSize="21sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/Im_n3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用管理"/>
+
+    </RelativeLayout>
+   <ListView
+       android:layout_below="@id/app_rl"
+       android:id="@+id/app_list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+</RelativeLayout>
